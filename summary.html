@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Summary</title>
+  </head>
+  <body>
+    <h1>파이선 정리 - 자료형</h1>
+    <ul>
+      <li><h2>str</h2></li>
+      <ul>
+        <li>문자열은 기본적으로 '', ""로 감싼다.</li>
+        <li>
+          백슬래시(\)로 ', "를 문자열 안에 포함할 수 있다. (\', \") <br />※
+          이스케이프 코드 : \n(줄바꿈), \t(탭간격), \(\)그대로 포함
+        </li>
+        <li>''' ''', """ """를 사용하면 이스케이프 코드 불필요</li>
+        <li>
+          순서가 있기 때문에 인덱스(a[6]), 슬라이싱(a[2:8]) 가능(sequence)
+        </li>
+        <li>변경이 불가능(immutable)해서 인덱스로 한 글자 수정 불가</li>
+        <li>문자열은 더하기(+), 곱하기(*) 가능</li>
+        <li>f문자열 포매팅 가능. f“나는 {A}입니다.”</li>
+      </ul>
+      <li><h2>list</h2></li>
+      <ul>
+        <li>L = [1, 2, 3, 4, 5]</li>
+        <li>여러 자료형을 담을 수 있다.</li>
+        <li>순서가 있어서 인덱스, 슬라이싱 가능</li>
+        <li>다중리스트 인덱스(a[3][2][4])</li>
+        <li>
+          변경 가능해 삽입(append), 삭제(remove), 정렬(sort) 가능 (mutable)
+        </li>
+        <li>더하기(+), 곱하기(*) 가능</li>
+      </ul>
+      <li><h2>tuple</h2></li>
+      <ul>
+          <li>t = (1, 2, 3, 4, 5)</li>
+          <li>리스트와 거의 동일하나 변경이 불가능</li>
+          <li>변경이 불가능하기 때문에 사용할 수 있는 메소드 수도 적음</li>
+          <li>속도 빨라서 파이썬 내부적으로 자주 사용</li>
+          <li>스왑(swap)을 쉽게 할 수 있다. (a, b = b, a)</li>
+      </ul>
+      <li><h2>dict</h2></li>
+      <ul>
+          <li>d = {‘name’:‘abc’, ‘birth’:2000}</li>
+          <li>set의 일종으로 키:값 쌍으로 구성된다.</li>
+          <li>키는 중복될 수 없다. (값은 중복 가능)</li>
+          <li>인덱스가 없고 키가 인덱스 역할을 함</li>
+          <li>for 반복문을 이용해 사전(딕셔너리) 내용(키와 값)을 출력할 수 있다.</li>
+      </ul>
+      <li><h2>set</h2></li>
+      <ul>
+          <li>s = {1, 2, 3, 4, 5}</li>
+          <li>수학에서 말하는 집합과 유사하다.</li>
+          <li>순서가 없어서 익덱스, 슬라이싱 불가</li>
+          <li>값 중복 불가, 변경 가능</li>
+          <li>in, not in 을 사용하여 집합 포함여부를 알 수 있다.</li>
+      </ul>
+    </ul>
+  </body>
+</html>
