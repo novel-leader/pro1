@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSH공개키 사용방법</title>
+</head>
+<body>
+    <h1>SSH공개키 사용방법</h1>
+    <h2>SSH공개키 생성 및 등록</h2>
+        <p>ssh공개키 있는지 확인<br>
+        $ cd ~/.ssh   :폴더이동<br>
+        $ ls          :폴더내 파일 확인<br>
+        <br>
+        공개키 생성<br>
+        $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"<br>
+        <br>
+        첫 질문 : 공개키 저장위치<br>
+        두번째 질문 : 비밀번호 설정(그냥 엔터 가능)<br>
+        <br>
+        $ ls        : 폴더내 파일 확인<br>
+        $ clip < ~/.ssh/id_ed25519.pub   :파일 복사<br>
+        <br>
+        github 등록<br>
+        <br>
+        연결테스트<br>
+        $ ssh -T git@github.com<br>
+        <br></p>
+    <h2>에러발생시 원인 및 해결방법</h2>
+        <p><h3>port 22: Connection timed out</h3>
+        보안이 강한 회사는 포트가 막혀있어서 ssh로 연결불가<br>
+        에러내용 : <br>
+        ssh: connect to host github.com port 22: Connection timed out<br>
+        여기에서 포트22가 외부연결을 막아놓은것임<br>
+        <a href="https://suzxc2468.tistory.com/155">참조 : https://suzxc2468.tistory.com/155</a><br>
+        <br>
+        clone, pull 할때 https 방식으로 가능<br>
+        push할때 Personal Access Tokens 방식으로 연결(기간90일설정)<br>
+        <br>
+        <br>
+        <h3>too-many-arguments-error 에러발생</h3>
+        이미 키가 생성되었다가 삭제되었을경우<br>
+        <br>
+        에러해결방법<br>
+        $ echo %HOMEPATH%<br>
+        입력<br>
+        <a href="https://wangkerry.com/2021/too-many-arguments-error-when-generating-the-git-ssh-key/">참조 : https://wangkerry.com</a></p>
+</body>
+</html>
