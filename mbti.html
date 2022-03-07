@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>MBTI</title>
+
+    <script>
+        function setcolor(color) {var alist = document.querySelectorAll('a');
+            var i = 0; while (i < alist.length) {alist[i].style.color = color; i = i + 1;}}
+    </script>
+
 </head>
 <body>
-    <p><a href="index.html">index</a></p>
-    <br>
-    <h3>댓글달기를 위한 방법</h3><br>
-    <p><a href=https://youtu.be/LVLHprUg-PM>(나도코딩) WEB1 부록 - 코드의 힘 : 댓글 기능 추가</a></p>
-
-    <p>로그인 없는 댓글 기능 작업중<br><br>
-        아래는 라이브리를 통한 댓글
+    <p><a href="index.html">index</a>
+    <input type="button" , value="NIGHT" , onclick="var target = document.querySelector('body');
+        if(this.value === 'NIGHT'){target.style.backgroundColor = 'black';
+        target.style.color = 'white';this.value = 'DAY';setcolor('powderblue');
+        } else {target.style.backgroundColor = 'white';
+        target.style.color = 'black';this.value = 'NIGHT';setcolor('blue');
+        }">
     </p>
-        
+    <br>
+    <h1>MBTI</h1>
+    <p><a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">MBTI 무료 테스트</a></p>
+    <br>
+
+
+    <p>MBTI 토론하기</p>
 <!-- 라이브리 시티 설치 코드 -->
 <div id="lv-container" data-id="city" data-uid="MTAyMC81NTU3Mi8zMjAzOQ==">
 	<script type="text/javascript">
@@ -35,7 +48,7 @@
 </div>
 <!-- 시티 설치 코드 끝 -->
 
-    <p> 채팅은 오른쪽 아래 동그란거
+    <p> 
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
   var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
